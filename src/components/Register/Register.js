@@ -24,6 +24,7 @@ class Register extends React.Component {
   }
 
   onSubmitSignIn = () => {
+    console.log('it works');
     fetch('https://dry-wildwood-96621.herokuapp.com/register', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},

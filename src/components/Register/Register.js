@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class Register extends React.Component {
   constructor(props) {
     super(props);
@@ -23,8 +24,9 @@ class Register extends React.Component {
     this.setState({password: event.target.value})
   }
 
+
+
   onSubmitSignIn = () => {
-    console.log('it works');
     fetch('https://dry-wildwood-96621.herokuapp.com/register', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
@@ -98,3 +100,4 @@ class Register extends React.Component {
 }
 
 export default Register;
+
